@@ -6,6 +6,22 @@ lib.callback.register('palkkio', function()
     exports.ox_inventory:AddItem(source, 'money', itemAmount, nil, nil, nil)
 end)
 
+lib.callback.register("onkoryostettu", function()
+    while true do
+        if ryostettu then
+            TriggerClientEvent('esx:showNotification', source, 'Tää on jo ryöstetty!', 'error', 3000)
+            SetTimeout(600000, function()
+                ryostettu = false
+            
+            end)
+        else
+            lib.callback("ryosto", source, false)
+           end
+   Wait(1000)
+    end
+end)
+
+
 lib.callback.register('onkopopo', function(source)
     local poliisi = 0
     local pelaajas = GetPlayers()
