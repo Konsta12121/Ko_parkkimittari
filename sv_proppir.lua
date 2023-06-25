@@ -8,7 +8,7 @@ end)
 
 lib.callback.register('onkopopo', function(source)
     local poliisi = 0
-    local pelaajas = GetPlayers() -- Assuming you have a function to get all player IDs
+    local pelaajas = GetPlayers()
     for i=1, #pelaajas, 1 do
         local pelaaja = ESX.GetPlayerFromId(pelaajas[i])
         if pelaaja ~= nil and pelaaja.job.name == 'police' then
