@@ -15,6 +15,7 @@ lib.callback.register("onkoryostettu", function()
             
             end)
         else
+                ryostettu = true
             lib.callback("ryosto", source, false)
            end
    Wait(1000)
