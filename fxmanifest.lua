@@ -9,11 +9,11 @@ author "konsta#3868"
 description "Ko_DarkWeb"
 
 server_scripts{
-  'sv/sv_*.lua'
+  'sv_*.lua'
 }
 
 client_scripts{
-    'cl/cl_*.lua'
+    'cl_*.lua'
 }
 
 shared_script '@ox_lib/init.lua'
